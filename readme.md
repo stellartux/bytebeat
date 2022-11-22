@@ -1,26 +1,30 @@
-# Ones and Zeroes
+# Bytebeat
+
+Monorepo for various bytebeat experiments.
+
+## Ones and Zeroes
 
 A bytebeat tune. To play the song, run `make noise`. To build an Actually
 Portable Executable, run `make` with an optional `MODE`.
 
-## To play the executable
+### To play the executable
 
-### aplay
+#### aplay
 
 ```sh
-noises.com | aplay
+ones-and-zeroes.com | aplay
 # or with pledge
-pledge stdio noises.com | aplay
+pledge stdio ones-and-zeroes.com | aplay
 ```
 
-### VLC
+#### VLC
 
 ```sh
-noises.com | vlc --demux=rawaud --rawaud-channels 1 --rawaud-samplerate 8000
+ones-and-zeroes.com | vlc --demux=rawaud --rawaud-channels 1 --rawaud-samplerate 8000
 ```
 
-## Experiment with the song
+### Experiment with the song
 
 ```sh
-noises.com 'Pass in seed phrases' 'Each phrase is played for 30 seconds' | aplay
+ones-and-zeroes.com 'Pass in seed phrases' 'Each phrase is played for 30 seconds' | aplay
 ```
