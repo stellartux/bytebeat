@@ -17,6 +17,14 @@ ones-and-zeroes.com | aplay
 pledge stdio ones-and-zeroes.com | aplay
 ```
 
+#### speakerpipe-osx
+
+On Mac, try [speakerpipe](https://github.com/richardkiss/speakerpipe-osx).
+
+```sh
+ones-and-zeroes.com | speakerpipe -u -b -r 8000
+```
+
 #### VLC
 
 ```sh
